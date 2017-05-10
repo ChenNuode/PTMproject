@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PTM booking page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../static/project.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+
+  <script>
+    function clicked() {
+        if (document.getElementById("Teacher").value == ""){ 
+            alert("Form incomplete");
+            return false;
+        }
+        else{
+            alert("Form successfully sent!");
+            document.feedback.submit();
+        }
+    }
+  </script>
+
+</head>
+
+<body>
+
+<div class="page-header">
+  <h1 class = "lol" ><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Raffles_Institution_Coat_of_Arms.svg/1200px-Raffles_Institution_Coat_of_Arms.svg.png" alt="RI logo" style="width:67px;height:100px;padding-right: 10px;padding-bottom: 15px;">PTM booking System</h1>
+</div>
+
+<div>
+<h3 class="jjl">Welcome to the PTM booking system! <br></br>Please choose the teacher whom you will like to meet and indicate <strong><font color="red">red</font></strong> for the slots you are <u><strong>not available</strong></u> for.</h3>
+</div>
+
+
+<br></br>
+
+<div class="llmao">
+
+
+<p style="font-size: 35px;font-family: 'Slabo 27px', serif;">Child's name: <strong>Chen Nuode</strong> Child's class: <strong>2K</strong></p>
+
+<form action="." method="POST" name="feedback">
+
+<center><select class="form-control" id="Teacher" style="text-align: center; width: 350px;">
+    <option value="" disabled selected>Select the teacher whom you will like to meet</option>
+    <option value="Dr Ong">Dr Ong</option>
+    <option value="Dr Lim">Dr Lim</option>
+    <option value="Mr Wu">Mr Wu</option>
+</select></center>
+</div>
+
+
+
+<p class="slots">Slots</p>
+<p style = "text-align: center;font-family:'Roboto', sans-serif;font-size: 20px;">Please indicate <font color="red">red</font> for the the slots that you cannot make it.</p>
+<hr></hr>
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4" style="font-size: 25px;">      
+    <li class="list-group-item">
+        <strong>8:15am to 8:30am</strong>
+        <div class="material-switch pull-right">
+            <input id="8:15am to 8:30am" name="8:15am to 8:30am" type="checkbox"/>
+            <label for="8:15am to 8:30am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>8:30am to 8:45am</strong>
+        <div class="material-switch pull-right">
+            <input id="8:30am to 8:45am" name="8:30am to 8:45am" type="checkbox"/>
+            <label for="8:30am to 8:45am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>8:45am to 9:00am</strong>
+        <div class="material-switch pull-right">
+            <input id="8:45am to 9:00am" name="8:45am to 9:00am" type="checkbox"/>
+            <label for="8:45am to 9:00am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>9:00am to 9:15am</strong>
+        <div class="material-switch pull-right">
+            <input id="9:00am to 9:15am" name="9:00am to 9:15am" type="checkbox"/>
+            <label for="9:00am to 9:15am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>9:15am to 9:30am</strong>
+        <div class="material-switch pull-right">
+            <input id="9:15am to 9:30am" name="9:15am to 9:30am" type="checkbox"/>
+            <label for="9:15am to 9:30am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>9:30am to 9:45am</strong>
+        <div class="material-switch pull-right">
+            <input id="9:30am to 9:45am" name="9:30am to 9:45am" type="checkbox"/>
+            <label for="9:30am to 9:45am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>9:45am to 10:00am</strong>
+        <div class="material-switch pull-right">
+            <input id="9:45am to 10:00am" name="9:45am to 10:00am" type="checkbox"/>
+            <label for="9:45am to 10:00am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>10:00am to 10:15am</strong>
+        <div class="material-switch pull-right">
+            <input id="10:00am to 10:15am" name="10:00am to 10:15am" type="checkbox"/>
+            <label for="10:00am to 10:15am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>10:15am to 10:30am</strong>
+        <div class="material-switch pull-right">
+            <input id="10:15am to 10:30am" name="10:15am to 10:30am" type="checkbox"/>
+            <label for="10:15am to 10:30am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>10:30am to 10:45am</strong>
+        <div class="material-switch pull-right">
+            <input id="10:30am to 10:45am" name="10:30am to 10:45am" type="checkbox"/>
+            <label for="10:30am to 10:45am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>10:45am to 11:00am</strong>
+        <div class="material-switch pull-right">
+            <input id="10:45am to 11:00am" name="10:45am to 11:00am" type="checkbox"/>
+            <label for="10:45am to 11:00am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>11:00am to 11:15am</strong>
+        <div class="material-switch pull-right">
+            <input id="11:00am to 11:15am" name="11:00am to 11:15am" type="checkbox"/>
+            <label for="11:00am to 11:15am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>11:15am to 11:30am</strong>
+        <div class="material-switch pull-right">
+            <input id="11:15am to 11:30am" name="11:15am to 11:30am" type="checkbox"/>
+            <label for="11:15am to 11:30am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>11:30am to 11:45am</strong>
+        <div class="material-switch pull-right">
+            <input id="11:30am to 11:45am" name="11:30am to 11:45am" type="checkbox"/>
+            <label for="11:30am to 11:45am" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>11:45am to 12:00pm</strong>
+        <div class="material-switch pull-right">
+            <input id="11:45am to 12:00pm" name="11:45am to 12:00pm" type="checkbox"/>
+            <label for="11:45am to 12:00pm" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>12:00pm to 12:15pm</strong>
+        <div class="material-switch pull-right">
+            <input id="12:00pm to 12:15pm" name="12:00pm to 12:15pm" type="checkbox"/>
+            <label for="12:00pm to 12:15pm" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>12:15pm to 12:30pm</strong>
+        <div class="material-switch pull-right">
+            <input id="12:15pm to 12:30pm" name="12:15pm to 12:30pm" type="checkbox"/>
+            <label for="12:15pm to 12:30pm" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <li class="list-group-item">
+        <strong>12:30pm to 12:45pm</strong>
+        <div class="material-switch pull-right">
+            <input id="12:30pm to 12:45pm" name="12:30pm to 12:45pm" type="checkbox"/>
+            <label for="12:30pm to 12:45pm" class="label-danger"></label>
+        </div>
+    </li>
+    <br>
+    <div style="text-align: center;">
+        <button style="width: 200px; height: 40px; text-align:center;" type="Submit" class="btn btn-default" value="Submit" onclick="clicked();">Submit</button>
+    </form>
+    </div>
+
+    <div style="padding-top: 40px;">
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

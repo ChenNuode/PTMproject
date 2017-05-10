@@ -1,0 +1,67 @@
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+    background: #21AB48;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+
+.lol {
+    padding-left: 70px;
+}
+
+.jjl {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+.llmao {
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.slots{
+    font-family: 'BioRhyme', serif;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 270px;
+    padding-bottom: 0px;
+}
+
+
+
+
+
+
+
